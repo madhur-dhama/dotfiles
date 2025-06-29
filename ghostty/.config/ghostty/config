@@ -1,0 +1,6 @@
+theme = Adwaita Dark
+
+#set ghostty to open full screen
+window-height = 1000
+window-width = 2000
+
