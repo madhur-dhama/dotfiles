@@ -1,4 +1,16 @@
-theme = Adwaita Dark
+ theme = catppuccin-mocha
+# theme = Adwaita Dark
+# theme = GruvboxDark
+
+# font-family = Meslo LGS Nerd Font Mono
+# font-family = CaskaydiaMono Nerd Font
+font-family = CaskaydiaCove Nerd Font
+
+font-size = 14
+background-opacity = 0.95
+gtk-titlebar = false
+# custom-shader = /home/chris/bloom.glsl
+#custom-shader = /home/chris/crt.glsl
 
 #set ghostty to open full screen
 window-height = 1000
