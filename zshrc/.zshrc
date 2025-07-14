@@ -15,17 +15,10 @@ setopt inc_append_history
 
 
 #Commands
-alias ff='fastfetch'
-alias nfzf='nano $(fzf)'
-alias nvfzf='nvim $(fzf)'
+alias nanofzf='nano $(fzf)'
+alias nvimfzf='nvim $(fzf)'
 
 #cd
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-#System
-alias reboot='sudo reboot now'
-alias shutdown='sudo shutdown now'
-
-alias upgrade='sudo dnf upgrade'
