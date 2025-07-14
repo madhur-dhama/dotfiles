@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = catppuccin-frappe
 # theme = Adwaita Dark
 # theme = GruvboxDark
 
@@ -7,7 +7,7 @@ font-family = JetBrainsMono Nerd Font
 # font-family = CaskaydiaMono Nerd Font
 # font-family = CaskaydiaCove Nerd Font
 
-font-size = 14
+font-size = 12
 
 # background-opacity = 0.95
 # gtk-titlebar = false
