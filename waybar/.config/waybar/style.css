@@ -1,0 +1,148 @@
+* {
+  font-family: JetbrainsMono Nerd Font;
+  font-size: 13px;
+  min-height: 0;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
+}
+
+#waybar {
+  background: transparent;
+  /* color: #720768; */
+  /* margin: 2px 2px; */
+}
+
+#workspaces {
+  border-radius: 5px;
+  margin: 5px;
+  background: #101010;
+  margin-left: 0rem;
+}
+
+#workspaces button {
+  color: #ffffff;
+  /* border-radius: 5px; */
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  background-color: #60858b;
+  /* border-radius: 5px; */
+}
+
+#workspaces button.empty {
+  color: #808080;
+  /* border-radius: 5px; */
+}
+
+#workspaces button.empty.active {
+  background-color: #60858b;
+  color: #5b5b5b;
+  /* border-radius: 5px; */
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  /* border-radius: 5px; */
+}
+
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#custom-lock,
+#custom-power {
+  background-color: #101010;
+  padding: 0.5rem 1rem;
+  margin: 5px 0; 
+  border-radius: 0px 5px 5px 0px;
+}
+
+#custom-stream_status {
+  background-color: #101010;
+  /* padding: 0.5rem 1rem;
+  margin: 5px 0;
+  border-radius: 0px 5px 5px 0px; */
+}
+
+#custom-stream_status.up {
+  color: #c3e88d;
+}
+
+#custom-stream_status.warning {
+  color: #ff9e64;
+}
+
+#custom-stream_status.down {
+  color: #ea999c;
+}
+
+#memory {
+  border-radius: 0px 5px 5px 0px;
+}
+
+#clock {
+  color: #8caaee;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+#battery {
+  color: #a6d189;
+}
+
+#battery.charging {
+  color: #a6d189;
+}
+
+#battery.warning:not(.charging) {
+  color: #e78284;
+}
+
+#backlight {
+  color: #e5c890;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+#network {
+  color: #99d1db;
+  border-radius: 0;
+}
+
+#pulseaudio {
+  color: #ea999c;
+  border-radius: 5px 0px 0px 5%;
+  /* margin-left: 1rem; */
+}
+
+#custom-music {
+  color: #ca9ee6;
+  /* border-radius: 5px; */
+}
+
+#custom-lock {
+  /* border-radius: 5px 0px 0px 5px; */
+  color: #babbf1;
+}
+
+#custom-power {
+  /* margin-right: 1rem; */
+  border-radius: 0px 5px 5px 0px;
+  color: #e78284;
+}
+
+#tray {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
