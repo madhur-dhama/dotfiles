@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -e
+
+# Check if running as root
+[[ $EUID -ne 0 ]] && echo "Run as root" && exit 1
+
+# Install os-prober if not installed
+if ! pacman -Qs os-prober &>/dev/null; then
+  echo "Installing os-prober..."
+  pacman -S --noconfirm os-prober
+fi
+
+# Backup grub config
+cp /etc/default/grub /etc/default/grub.bak.$(date +%Y%m%d_%H%M%S)
+
+# Enable os-prober
+GRUB_CONFIG="/etc/default/grub"
+if ! grep -q '^GRUB_DISABLE_OS_PROBER=false' "$GRUB_CONFIG"; then
+  echo "Enabling os-prober..."
+  sed -i '/^#*GRUB_DISABLE_OS_PROBER=/d' "$GRUB_CONFIG"
+  echo 'GRUB_DISABLE_OS_PROBER=false' >> "$GRUB_CONFIG"
+fi
+
+# Generate grub config
+echo "Updating GRUB..."
+grub-mkconfig -o /boot/grub/grub.cfg
+
+echo "Done! Reboot to see all OS entries."
